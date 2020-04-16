@@ -1,0 +1,17 @@
+{
+	"workbench.colorCustomizations": {
+		"activityBar.background": "#322163",
+		"titleBar.activeBackground": "#462E8A",
+		"titleBar.activeForeground": "#FCFCFE"
+	},
+	"cSpell.words": [
+		"chromezoneeths",
+		"fomantic",
+		"gstatic",
+		"gulplog",
+		"kitcoin",
+		"libkitcoin",
+		"oauthinfo",
+		"tsify"
+	]
+}

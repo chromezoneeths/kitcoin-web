@@ -1,0 +1,31 @@
+{
+	"name": "kitcoin-web",
+	"version": "0.0.1",
+	"description": "Web client for Kitcoin",
+	"main": "build/index.html",
+	"repository": "https://github.com/chromezoneeths/kitcoin-web",
+	"author": "Tucker Carlson-Huber <tuckerch@tuta.io>",
+	"license": "MIT",
+	"private": false,
+	"scripts": {
+		"build": "gulp"
+	},
+	"devDependencies": {
+		"browserify": "^16.5.1",
+		"gulp": "^4.0.2",
+		"gulp-copy": "^4.0.1",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-svelte": "^0.8.0",
+		"gulplog": "^1.0.0",
+		"tsify": "^4.0.1",
+		"vinyl-buffer": "^1.0.1",
+		"vinyl-source-stream": "^2.0.0",
+		"xo": "^0.29.1"
+	},
+	"dependencies": {
+		"fomantic-ui-css": "^2.8.4",
+		"libkitcoin": "github:chromezoneeths/libkitcoin",
+		"mkdirp": "^1.0.4",
+		"svelte": "^3.20.1"
+	}
+}

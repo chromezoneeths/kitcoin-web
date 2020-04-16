@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>KitCoin</title>
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' fonts.googleapis.com; font-src 'self' data: fonts.gstatic.com; connect-src 'self' ws://127.0.0.1:9876;">
+	<link rel="stylesheet" href="ui/semantic.min.css">
+	<link rel="stylesheet" href="index.css">
+	<script src="jq/jquery.min.js"></script>
+	<script type="module" src="./svelte/coin-count.js"></script>
+	<script async src="index.js"></script>
+</head>
+
+<body>
+	<div class="ui top fixed menu">
+		<a class="item" href="#top">
+			<img src="/kitcoin.png"></img>
+		</a>
+		<div class="item">
+			<coin-count />
+		</div>
+	</div>
+	<span id="top"></span>
+	<br><br><br><br>
+	<div class="ui grid container">
+		< </div>
+</body>
+
+</html>
