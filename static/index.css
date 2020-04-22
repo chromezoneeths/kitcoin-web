@@ -1,7 +1,11 @@
 div.top.menu {
-	background-color: #c34614 ;
+	background-color: #1a2741 ;
 }
 
 html {
 	scroll-behavior: smooth;
+}
+
+.abs {
+	position: absolute;
 }

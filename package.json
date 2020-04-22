@@ -27,5 +27,13 @@
 		"libkitcoin": "github:chromezoneeths/libkitcoin",
 		"mkdirp": "^1.0.4",
 		"svelte": "^3.20.1"
+	},
+	"xo": {
+		"envs": [
+			"es2015",
+			"browser",
+			"node",
+			"jquery"
+		]
 	}
 }

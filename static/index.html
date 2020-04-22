@@ -16,16 +16,20 @@
 <body>
 	<div class="ui top fixed menu">
 		<a class="item" href="#top">
-			<img src="/kitcoin.png"></img>
+			<img src="kitcoin-k.svg" class="abs" alt="Kitcoin logo" />
+			<img src="kitcoin-ring.svg" id="loading-ring" alt="Kitcoin logo" />
 		</a>
 		<div class="item">
-			<coin-count />
+			<div class="ui inverted tiny statistic">
+				<div class="value" id="coin-count">???</div>
+			</div>
 		</div>
 	</div>
 	<span id="top"></span>
 	<br><br><br><br>
 	<div class="ui grid container">
-
+		<button class="ui button" id="toggle-ring-button">aaa</button>
+	</div>
 </body>
 
 </html>

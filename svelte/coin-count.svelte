@@ -1,5 +1,3 @@
-<svelte:options tag="coin-count" />
-
 <script>
   export default {
     tag: "coin-count",
@@ -20,10 +18,12 @@
   // //   }
   // // }
 </script>
+
+<svelte:options tag="coin-count" />
 <main>
   <link rel="stylesheet" href="/ui/semantic.min.css" />
-  <div class="ui mini statistic" style="padding:0">
-    <div class="value">{count || "???"}</div>
+  <div class="ui inverted mini statistic" style="padding:0">
+    <div class="value">{count || '???'}</div>
     <div class="label">kitcoin</div>
   </div>
 </main>
