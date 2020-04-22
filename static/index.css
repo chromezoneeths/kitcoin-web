@@ -9,3 +9,26 @@ html {
 .abs {
 	position: absolute;
 }
+
+/* .rotating {
+	animation-name: spin; 
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+} */
+
+@keyframes spin {
+	0% {
+		transform: rotateZ(0);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+
+.rotating[rate] {
+	animation-name: spin;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+}
