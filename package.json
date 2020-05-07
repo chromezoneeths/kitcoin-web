@@ -1,0 +1,40 @@
+{
+  "name": "kitcoin-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chromezoneeths/kitcoin-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chromezoneeths/kitcoin-web/issues"
+  },
+  "homepage": "https://github.com/chromezoneeths/kitcoin-web#readme",
+  "dependencies": {
+    "@types/jquery": "^3.3.38",
+    "@types/semantic-ui": "^2.2.7",
+    "fomantic-ui-css": "^2.4.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-copy": "^4.0.1",
+    "gulp-xo": "^0.24.0",
+    "xo": "^0.30.0"
+  },
+  "xo": {
+    "rules": {
+      "unicorn/better-regex": 0
+    },
+    "envs": [
+      "browser",
+      "jquery"
+    ]
+  }
+}
