@@ -30,7 +30,8 @@
   },
   "xo": {
     "rules": {
-      "unicorn/better-regex": 0
+      "unicorn/better-regex": 0,
+      "import/extensions": 0
     },
     "envs": [
       "browser",
