@@ -2,7 +2,17 @@ let ws;
 
 export async function connect(url) {
 	return new Promise((resolve, reject) => {
-		ws = new WebSocket(url);
+		const loc = window.location;
+		let	NewUri;
+		if (loc.protocol === 'https:') {
+			NewUri = 'wss:';
+		} else {
+			NewUri = 'ws:';
+		}
+
+		NewUri += '//' + loc.host;
+		NewUri += loc.pathname + url;
+		ws = new WebSocket(NewUri);
 		ws.addEventListener('open', resolve, {once: true});
 		ws.addEventListener('error', reject, {once: true});
 	});
