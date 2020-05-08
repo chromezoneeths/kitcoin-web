@@ -4,7 +4,7 @@ const xo = require('gulp-xo');
 
 gulp.task('www', () => {
 	return gulp.src('./www/**')
-		.pipe(gulpCopy('./dist', {prefix: 6}));
+		.pipe(gulp.dest('./dist/extern/jquery'));
 });
 
 gulp.task('jquery', () => {
