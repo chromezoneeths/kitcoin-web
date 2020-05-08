@@ -1,5 +1,4 @@
 const gulp = require('gulp');
-const gulpCopy = require('gulp-copy');
 const {watch} = require('gulp');
 const xo = require('gulp-xo');
 
@@ -10,11 +9,11 @@ gulp.task('www', () => {
 
 gulp.task('jquery', () => {
 	return gulp.src('./node_modules/jquery/dist/**')
-		.pipe(gulpCopy('./dist/extern/jquery', {prefix: 27}));
+		.pipe(gulp.dest('./dist/extern/jquery'));
 });
 gulp.task('fomantic', () => {
 	return gulp.src('./node_modules/fomantic-ui-css/**')
-		.pipe(gulpCopy('./dist/extern/fomantic', {prefix: 31}));
+		.pipe(gulp.dest('./dist/extern/fomantic'));
 });
 gulp.task('extern', gulp.parallel('jquery', 'fomantic'));
 
@@ -28,7 +27,7 @@ gulp.task('lint', () => {
 });
 gulp.task('js', () => {
 	return gulp.src('./js/**')
-		.pipe(gulpCopy('./dist', {prefix: 6}));
+		.pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('default', gulp.parallel('www', 'extern', gulp.series('lint', 'js')));

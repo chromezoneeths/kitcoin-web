@@ -8,6 +8,12 @@
     <script src="extern/jquery/jquery.min.js"></script>
     <script src="extern/fomantic/semantic.min.js"></script>
     <script type="module" src="index.js"></script>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src inline 'self' ws://localhost:9876 http://localhost:9876; 
+						font-src 'self' data: fonts.gstatic.com;
+						style-src 'self' 'unsafe-inline'"
+    />
   </head>
   <body>
     <div class="ui modal" id="login-prompt">
